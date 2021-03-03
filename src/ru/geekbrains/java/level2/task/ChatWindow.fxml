@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="center" prefHeight="535.0" prefWidth="297.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.geekbrains.java.level2.task.ChatController">
+    <TextArea fx:id="questArea" editable="false" focusTraversable="false" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" left="10.0" right="10.0" top="10.0" />
+      </VBox.margin>
+    </TextArea>
+
+    <TextArea fx:id="messArea" maxHeight="100.0" minHeight="50.0" prefHeight="30.0">
+      <VBox.margin>
+         <Insets bottom="5.0" left="10.0" right="10.0" />
+      </VBox.margin>
+    </TextArea>
+   <Button maxWidth="Infinity" mnemonicParsing="false"  onAction="#send" text="Send" HBox.hgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="5.0" left="10.0" right="10.0" />
+      </VBox.margin>
+   </Button>
+
+</VBox>
